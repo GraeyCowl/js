@@ -1,1 +1,1 @@
-let admin, name
+let admin, name; 
