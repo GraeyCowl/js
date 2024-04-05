@@ -2,4 +2,6 @@ let admin, name;
 
 name = "John";
 
-alert( name);
+admin = name;
+
+alert( admin);
