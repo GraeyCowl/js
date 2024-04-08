@@ -222,8 +222,22 @@ document.getElementById("demo14").innerHTML =
     // y is a Number object
     let y15 = new Number(123);
 document.getElementById("demo15").innerHTML = typeof x15 + "<br>" + typeof y15;
-
-
 </script>
+
+<h2>JS Numbers as Objects</h2>
+<p>Demo 16: Numbers and Number objects cannot be safely compared:</p>
+<p>x==y and x===y</P>
+<p id="demo16"></p>
+
+<script>
+    // x is a number
+    let x16 = 500;
+
+    // y is an object
+    let y16 = new Number(500);
+document.getElementById("demo16").innerHTML = (x16==y16) + "<br>" + (x16===y16);
+</script>
+
+
 </body>
 </html>
