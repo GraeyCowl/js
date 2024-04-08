@@ -147,5 +147,31 @@ document.getElementById("demo10").innerHTML = x10 + y10;
     let x11 = NaN;
 document.getElementById("demo11").innerHTML = typeof x11;
 </script>
+
+<h2>∞ Infinity ∞</h2>
+<p>Demo 12a: Infinity is returned if you calculate a number outside the largest possible number:</p>
+<p>myNumber = 2, txt = "", if (myNumber =/= Infinity) then myNumber * myNumber = myNumber and txt + myNumber, txt =</p>
+<p id="demo12a"></p>
+
+<script>
+    let myNumber = 2; 
+    let txt = "";
+    while (myNumber != Infinity) {
+        myNumber = myNumber * myNumber;
+        txt = txt + myNumber + "<br>";}
+document.getElementById("demo12a").innerHTML = txt;
+</script>
+
+<h2>X/0=∞ Infinity ∞</h2>
+<p>Division by zero generates Infinity</p>
+<p>x = 2/0, y = -2/0</p>
+<p id="demo12b"></p>
+
+<script>
+    let x12b = 2/0;
+    let y12b = -2/0;
+document.getElementById("demo12b").innerHTML = x12b + "<br>" + y12b;
+</script>
+
 </body>
 </html>
