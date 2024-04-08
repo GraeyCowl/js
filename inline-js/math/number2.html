@@ -78,7 +78,7 @@ document.getElementById("demo5").innerHTML = o;
 </script>
 
 <h2>JavaScript Numbers</h2>
-<p>Demo 6: JavaScript will NOT convert strings to numbers when adding:</p>
+<p>Demo 6: JavaScript will NOT convert strings to numbers when adding</p>
 <p>But this will not work: x = "100", y = "10", x + y = z</p>
 <p id="demo6"></p>
 
@@ -87,6 +87,21 @@ document.getElementById("demo5").innerHTML = o;
     let y6 = "10";
     let z6 = x6 + y6;   
 document.getElementById("demo6").innerHTML = z6;
+</script>
+
+<h2>NaN - Not a Number</h2>
+<p>Demo 7a:A number divided by a non-numeric string becomes NaN (Not a Number)</p>
+<p>100 / "Apple"</p>
+<p id="demo7a"></p>
+
+<script>
+    document.getElementById("demo7a").innerHTML = 100 / "Apple";
+</script>
+
+<p id="demo7b"></p>
+<p>Demo 7b: A number divided by a numeric string becomes a number</p>
+<script>
+    document.getElementById("demo7b").innerHTML = 100 / "10";
 </script>
 </body>
 </html>
