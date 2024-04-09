@@ -8,10 +8,11 @@ window.addEventListener('resize', function(){
   canvas.height = window.innerHeight
 });
 
-ctx.fillStyle = 'red';
+ctx.fillStyle = 'blue';
 ctx.strokeStyle = 'red';
-ctx.lineWidth = 5;
+ctx.lineWidth = 25;
 ctx.beginPath()
 ctx.arc(100, 100, 50, 0, Math.PI * 2);
 ctx.stroke();
-console.log(ctx)
+ctx.fill();
+console.log(ctx);
