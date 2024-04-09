@@ -1,3 +1,6 @@
-const canvas = document.getElementByID('canvas1');
+const canvas = document.getElementById('canvas1');
 const ctx = canvas.getContext('2d');
-console.log(ctx)
+console.log(ctx);
+
+ctx.fillStyle = 'white';
+ctx.fillRect(10, 10, 50, 50);
