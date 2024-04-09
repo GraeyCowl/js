@@ -23,8 +23,8 @@ function drawCircle(){
 ctx.strokeStyle = 'red';
 ctx.lineWidth = 25;
 ctx.beginPath();
-ctx.arc(100, 100, 50, 0, Math.PI * 2);
+ctx.arc(mouse.x, mouse.y, 50, 0, Math.PI * 2);
 ctx.stroke();
 ctx.fill();
 }
-drawCircle();
+// drawCircle(); at startup
