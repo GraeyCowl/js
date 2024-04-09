@@ -9,6 +9,7 @@ window.addEventListener('resize', function(){
 });
 
 ctx.fillStyle = 'red';
+ctx.strokeStyle = 'red';
 ctx.beginPath()
 ctx.arc(100, 100, 50, 0, Math.PI * 2);
-ctx.fill();
+ctx.stroke();
