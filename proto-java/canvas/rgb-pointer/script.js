@@ -15,13 +15,11 @@ const mouse = {
 canvas.addEventListener('click', function(event){
   mouse.x = event.x;
   mouse.y = event.y;
-  drawCircle();
 });
 
 canvas.addEventListener('mousemove', function(event){
   mouse.x = event.x;
   mouse.y = event.y;
-  drawCircle(); 
 })
 
 function drawCircle(){
