@@ -9,8 +9,8 @@ window.addEventListener('resize', function(){
 });
 
 const mouse = {
-  x : null,
-  y : null,
+  x : undefined,
+  y : undefined,
 }
 canvas.addEventListener('click', function(event){
   mouse.x = event.x;
@@ -33,3 +33,11 @@ function drawCircle(){
   ctx.stroke();
   ctx.fill();
 }
+
+function animate(){
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  drawCircle();
+  requestAnimationFrame(animate);
+}
+
+animate();
