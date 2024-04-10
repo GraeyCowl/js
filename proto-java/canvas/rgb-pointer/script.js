@@ -67,10 +67,12 @@ function handleParticles(){
       if (distance < 100){
         ctx.beginPath();
         ctx.strokeStyle = particlesArray[i].color;
-        ctx.lineWidth = particlesArray[i].size/10;
+        // ctx.lineWidth = particlesArray[i].size/10;
+        ctx.lineWidth = 0.2;
         ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
         ctx.lineTo(particlesArray[j].x, particlesArray[j].y);
         ctx.stroke();
+        ctx.closePath()
       }
     }
     if (particlesArray[i].size <= 0.3){
