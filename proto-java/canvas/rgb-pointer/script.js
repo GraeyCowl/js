@@ -34,7 +34,7 @@ class Particle {
     this.speedX = Math.random() * 3 - 1.5;
     this.speedY = Math.random() * 3 - 1.5;
   }
-  
+
   update(){
     this.x += this.speedX;
     this.y += this.speedY;
@@ -42,11 +42,8 @@ class Particle {
 
   draw(){
     ctx.fillStyle = 'blue';
-    ctx.strokeStyle = 'red';
-    ctx.lineWidth = 25;
     ctx.beginPath();
     ctx.arc(this.x, this.y, 50, 0, Math.PI * 2);
-    ctx.stroke();
     ctx.fill();
   }
 }
