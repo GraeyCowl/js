@@ -25,8 +25,10 @@ canvas.addEventListener('mousemove', function(event){
 
 class Particle {
   constructor(){
-    this.x = mouse.x;
-    this.y = mouse.y;
+    //this.x = mouse.x;
+    //this.y = mouse.y;
+    this.x = Math.random() * canvas.width;
+    this.y = Math.random() * canvas.height;
     this.size = Math.random() * 5 + 1;
     this.speedX = Math.random() * 3 - 1.5;
     this.speedY = Math.random() * 3 - 1.5;
@@ -53,10 +55,17 @@ function init(){
 }
 
 init();
-console.log(particlesArray);
+
+function handleParticles(){
+  for (let i = 0; i < particlesArray.length; i++){
+    particlesArray[i].update;
+    particlesArray[i].draw();
+  }
+}
 
 function animate(){
   ctx.clearRect(0, 0, canvas.width, canvas.height);
+  handleParticles();
   requestAnimationFrame(animate);
 }
 
