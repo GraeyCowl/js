@@ -34,10 +34,12 @@ class Particle {
     this.speedX = Math.random() * 3 - 1.5;
     this.speedY = Math.random() * 3 - 1.5;
   }
+  
   update(){
     this.x += this.speedX;
     this.y += this.speedY;
   }
+
   draw(){
     ctx.fillStyle = 'blue';
     ctx.strokeStyle = 'red';
