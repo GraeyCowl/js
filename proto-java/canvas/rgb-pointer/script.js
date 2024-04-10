@@ -26,12 +26,12 @@ canvas.addEventListener('mousemove', function(event){
 
 function drawCircle(){
   ctx.fillStyle = 'blue';
-ctx.strokeStyle = 'red';
-ctx.lineWidth = 25;
-ctx.beginPath();
-ctx.arc(mouse.x, mouse.y, 50, 0, Math.PI * 2);
-ctx.stroke();
-ctx.fill();
+  ctx.strokeStyle = 'red';
+  ctx.lineWidth = 25;
+  ctx.beginPath();
+  ctx.arc(mouse.x, mouse.y, 50, 0, Math.PI * 2);
+  ctx.stroke();
+  ctx.fill();
 }
 // drawCircle(); at startup
 // ~16:30
