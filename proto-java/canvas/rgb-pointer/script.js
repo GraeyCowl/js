@@ -17,7 +17,7 @@ const mouse = {
 canvas.addEventListener('click', function(event){
   mouse.x = event.x;
   mouse.y = event.y;
-  for (let i = 0; i < 10; i++){
+  for (let i = 0; i < 25; i++){
     particlesArray.push(new Particle());
   }
 });
@@ -68,9 +68,10 @@ function handleParticles(){
 }
 function animate(){
   // ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.fillStyle = 'black';
+  ctx.fillStyle = 'rgba(0, 0, 0, 0.02)';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   handleParticles();
+
   requestAnimationFrame(animate);
 }
 
