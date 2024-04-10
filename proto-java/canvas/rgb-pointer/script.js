@@ -5,8 +5,8 @@ canvas.height = window.innerHeight;
 const particlesArray = [];
 
 window.addEventListener('resize', function(){
-  canvas.width = window.innerWidth
-  canvas.height = window.innerHeight
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
 });
 
 const mouse = {
