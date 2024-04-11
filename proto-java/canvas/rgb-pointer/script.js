@@ -62,10 +62,7 @@ class Particle {
 
 function handleParticles(){
   for (let i = 0; i < particlesArray.length; i++){
-    particlesArray[i].update();
-    particlesArray[i].draw();
-
-    for (let j = i; j <particlesArray.length; j++){
+    for (let j = i; j < particlesArray.length; j++){
       const dx = particlesArray[i].x - particlesArray[j].x;
       const dy = particlesArray[i].y - particlesArray[j].y;
       const distance = Math.sqrt(dx * dx + dy * dy);
@@ -77,16 +74,20 @@ function handleParticles(){
         ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
         ctx.lineTo(particlesArray[j].x, particlesArray[j].y);
         ctx.stroke();
-        ctx.closePath()
+        ctx.closePath();
       }
     }
+    particlesArray[i].update();
+    particlesArray[i].draw();
+    
     if (particlesArray[i].size <= 0.3){
       particlesArray.splice(i, 1);
-      // console.log(particlesArray.length);
+      console.log(particlesArray.length);
       i--;
-    }
+      }
   }
 }
+
 function animate(){
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   // ctx.fillStyle = 'rgba(0, 0, 0, 0.02)';
