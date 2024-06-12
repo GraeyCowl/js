@@ -15,4 +15,4 @@ const COLOR_BLUE = "#00F";
 const COLOR_ORANGE = "#FF7F00";
 
 let color = COLOR_BLUE;
-// alert(color);
+// alert(color); End of Var, Start Oper
