@@ -18,7 +18,7 @@ button2.addEventListener('click', playSound);
 function playSound(){
     const oscillator = audioCtx.createOscillator();
     oscillator.connect(audioCtx.destination);
-    oscillator.type ='triangle';
+    oscillator.type ='triangle'; //sine, square,triangle, sawtooth
     oscillator.start();
     setTimeout(function(){
         oscillator.stop();
