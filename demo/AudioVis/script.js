@@ -22,5 +22,5 @@ function playSound(){
     oscillator.start();
     setTimeout(function(){
         oscillator.stop();
-    }, 1000)
+    }, 500)
 }
