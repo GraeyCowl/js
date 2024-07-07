@@ -115,3 +115,11 @@ function loadShoppingList() {
         document.getElementById('shoppingList').appendChild(listItem);
     });
 }
+
+function exportToSpreadsheet() {
+    const shoppingList = JSON.parse(localStorage.getItem('shoppingList')) || [];
+    const worksheet = XLSX.utils.json_to_sheet(shoppingList);
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, 'Shopping List');
+    XLSX.writeFile(workbook, 'shopping_list.xlsx');
+}
