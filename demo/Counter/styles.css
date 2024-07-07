@@ -60,22 +60,36 @@ li {
     border-bottom: 1px solid #ccc;
 }
 
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
 li input.quantity-input {
     width: 50px;
-    margin-right: 10px;
+    margin: 0 5px;
     padding: 5px;
     text-align: center;
 }
 
-li button {
-    background-color: #dc3545;
+.quantity-controls button {
+    background-color: #007BFF;
     border: none;
     color: #fff;
     cursor: pointer;
     padding: 5px 10px;
+    margin: 0 5px;
     border-radius: 5px;
 }
 
-li button:hover {
+.quantity-controls button:hover {
+    background-color: #0056b3;
+}
+
+li button.remove {
+    background-color: #dc3545;
+}
+
+li button.remove:hover {
     background-color: #c82333;
 }
