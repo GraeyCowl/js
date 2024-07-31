@@ -1,243 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS Numbers 2</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Links</h1>
     <div>
-        <a href="https://www.w3schools.com/js/js_numbers.asp">Original Exercises</a>
-        <p>JavaScript Numbers | by W3Schools</p><br>
-        <a href="index.html">Page 1 - Arithmetic</a><br>
-        <a href="adv.html">Page 2 - Arithmetic cont</a><br>
-        <a href="number.html">Page 3 - Number</a><br>
-        <a href="number2.html">Page 4 - Number cont - Here</a><br>
+      <a href="https://www.w3schools.com/js/js_numbers.asp"
+        >Original Exercises</a
+      >
+      <p>JavaScript Numbers | by W3Schools</p>
+      <br />
+      <a href="index.html">Page 1 - Arithmetic</a><br />
+      <a href="adv.html">Page 2 - Arithmetic cont</a><br />
+      <a href="number.html">Page 3 - Number</a><br />
+      <a href="number2.html">Page 4 - Number cont - Here</a><br />
     </div>
 
-<h2>JavaScript Numbers</h2>
-<p>Demo 1: A common mistake is to expect this result to be 102030</p>
-<p>a = 10, b = 20, c = "30", result = x + y + z</p>
-<p id="demo1"></p>
-    
-<script>
-    let a = 10;
-    let b = 20;
-    let c = "30";
-    let result = a + b + c;
-document.getElementById("demo1").innerHTML = result;
-</script>
+    <h2>JavaScript Numbers</h2>
+    <p>Demo 1: A common mistake is to expect this result to be 102030</p>
+    <p>a = 10, b = 20, c = "30", result = x + y + z</p>
+    <p id="demo1"></p>
 
-<h2>Demo 2: Partial Demo</h2>
-<p>JavaScript strings can have numeric content</p>
-<p>d = 100, is a number, e = "100" is a string, d + e = f</p>
-<p id="demo2"></p>
+    <script>
+      let a = 10;
+      let b = 20;
+      let c = "30";
+      let result = a + b + c;
+      document.getElementById("demo1").innerHTML = result;
+    </script>
 
-<script>
-    let d = 100;         // x is a number
-    let e = "100";       // y is a string
-    let f = d + e;
-document.getElementById("demo2").innerHTML = f;
-</script>
+    <h2>Demo 2: Partial Demo</h2>
+    <p>JavaScript strings can have numeric content</p>
+    <p>d = 100, is a number, e = "100" is a string, d + e = f</p>
+    <p id="demo2"></p>
 
-<h2>JavaScript Numbers</h2>
-<p>Demo 3: JavaScript will try to convert strings to numbers when dividing</p>
-<p>This will work: g = "100", h = "10", g / h = i</p>
-<p id="demo3"></p>
+    <script>
+      let d = 100; // x is a number
+      let e = "100"; // y is a string
+      let f = d + e;
+      document.getElementById("demo2").innerHTML = f;
+    </script>
 
-<script>
-    let g = "100";
-    let h = "10";
-    let i = g / h;   
-document.getElementById("demo3").innerHTML = i;
-</script>
+    <h2>JavaScript Numbers</h2>
+    <p>
+      Demo 3: JavaScript will try to convert strings to numbers when dividing
+    </p>
+    <p>This will work: g = "100", h = "10", g / h = i</p>
+    <p id="demo3"></p>
 
-<h2>JavaScript Numbers</h2>
-<p>Demo 4: JavaScript will try to convert strings to numbers when multiplying</p>
-<p>This will also work: j = "100", k = "10", j * k = l</p>
-<p id="demo4"></p>
+    <script>
+      let g = "100";
+      let h = "10";
+      let i = g / h;
+      document.getElementById("demo3").innerHTML = i;
+    </script>
 
-<script>
-    let j = "100";
-    let k = "10";
-    let l = j * k;   
-document.getElementById("demo4").innerHTML = l;
-</script>
+    <h2>JavaScript Numbers</h2>
+    <p>
+      Demo 4: JavaScript will try to convert strings to numbers when multiplying
+    </p>
+    <p>This will also work: j = "100", k = "10", j * k = l</p>
+    <p id="demo4"></p>
 
-<h2>JavaScript Numbers</h2>
-<p>Demo 5: JavaScript will try to convert strings to numbers when subtracting</p>
-<p>And this will work: m = "100", n = "10", m - n = o </p>
-<p id="demo5"></p>
+    <script>
+      let j = "100";
+      let k = "10";
+      let l = j * k;
+      document.getElementById("demo4").innerHTML = l;
+    </script>
 
-<script>
-    let m = "100";
-    let n = "10";
-    let o = m - n;   
-document.getElementById("demo5").innerHTML = o;
-</script>
+    <h2>JavaScript Numbers</h2>
+    <p>
+      Demo 5: JavaScript will try to convert strings to numbers when subtracting
+    </p>
+    <p>And this will work: m = "100", n = "10", m - n = o</p>
+    <p id="demo5"></p>
 
-<h2>JavaScript Numbers</h2>
-<p>Demo 6: JavaScript will NOT convert strings to numbers when adding</p>
-<p>But this will not work: x = "100", y = "10", x + y = z</p>
-<p id="demo6"></p>
+    <script>
+      let m = "100";
+      let n = "10";
+      let o = m - n;
+      document.getElementById("demo5").innerHTML = o;
+    </script>
 
-<script>
-    let x6 = "100";
-    let y6 = "10";
-    let z6 = x6 + y6;   
-document.getElementById("demo6").innerHTML = z6;
-</script>
+    <h2>JavaScript Numbers</h2>
+    <p>Demo 6: JavaScript will NOT convert strings to numbers when adding</p>
+    <p>But this will not work: x = "100", y = "10", x + y = z</p>
+    <p id="demo6"></p>
 
-<h2>NaN - Not a Number</h2>
-<p>Demo 7a:A number divided by a non-numeric string becomes NaN (Not a Number)</p>
-<p>100 / "Apple"</p>
-<p id="demo7a"></p>
+    <script>
+      let x6 = "100";
+      let y6 = "10";
+      let z6 = x6 + y6;
+      document.getElementById("demo6").innerHTML = z6;
+    </script>
 
-<script>
-    document.getElementById("demo7a").innerHTML = 100 / "Apple";
-</script>
+    <h2>NaN - Not a Number</h2>
+    <p>
+      Demo 7a:A number divided by a non-numeric string becomes NaN (Not a
+      Number)
+    </p>
+    <p>100 / "Apple"</p>
+    <p id="demo7a"></p>
 
-<p>Demo 7b: A number divided by a numeric string becomes a number</p>
-<p>100 / "10" =</p>
-<p id="demo7b"></p>
+    <script>
+      document.getElementById("demo7a").innerHTML = 100 / "Apple";
+    </script>
 
-<script>
-    document.getElementById("demo7b").innerHTML = 100 / "10";
-</script>
+    <p>Demo 7b: A number divided by a numeric string becomes a number</p>
+    <p>100 / "10" =</p>
+    <p id="demo7b"></p>
 
-<h2>NaN</h2>
-<p>demo 8: You can use the global JavaScript function isNaN() to find out if a value is not a number</p>
-<p>x = 100 / "Apple", isNaN</p>
-<p id="demo8"></p>
+    <script>
+      document.getElementById("demo7b").innerHTML = 100 / "10";
+    </script>
 
-<script>
-    let x8 = 100 / "Apple";
-document.getElementById("demo8").innerHTML = isNaN(x8);
-</script>
+    <h2>NaN</h2>
+    <p>
+      demo 8: You can use the global JavaScript function isNaN() to find out if
+      a value is not a number
+    </p>
+    <p>x = 100 / "Apple", isNaN</p>
+    <p id="demo8"></p>
 
-<h2>NaN in Math</h2>
-<p>Demo 9: If you use NaN in a mathematical operation, the result will also be NaN</p>
-<p>x = NaN, y = 5, x +y =</p>
-<p id="demo9"></p>
+    <script>
+      let x8 = 100 / "Apple";
+      document.getElementById("demo8").innerHTML = isNaN(x8);
+    </script>
 
-<script>
-    let x9 = NaN;
-    let y9 = 5;
-document.getElementById("demo9").innerHTML = x9 + y9;
-</script>
+    <h2>NaN in Math</h2>
+    <p>
+      Demo 9: If you use NaN in a mathematical operation, the result will also
+      be NaN
+    </p>
+    <p>x = NaN, y = 5, x +y =</p>
+    <p id="demo9"></p>
 
-<h2>NaN in Math</h2>
-<p>Demo10 : If you use NaN in a mathematical operation, the result can be a concatenation</p>
-<p>x = NaN, y = "5", x + y =</p>
-<p id="demo10"></p>
+    <script>
+      let x9 = NaN;
+      let y9 = 5;
+      document.getElementById("demo9").innerHTML = x9 + y9;
+    </script>
 
-<script>
-    let x10 = NaN;
-    let y10 = "5";
-document.getElementById("demo10").innerHTML = x10 + y10;
-</script>
+    <h2>NaN in Math</h2>
+    <p>
+      Demo10 : If you use NaN in a mathematical operation, the result can be a
+      concatenation
+    </p>
+    <p>x = NaN, y = "5", x + y =</p>
+    <p id="demo10"></p>
 
-<h2>NaN</h2>
-<p>Demo 11 :The typeof NaN is number</p>
-<p>x = NaN, type of x</p>
-<p id="demo11"></p>
+    <script>
+      let x10 = NaN;
+      let y10 = "5";
+      document.getElementById("demo10").innerHTML = x10 + y10;
+    </script>
 
-<script>
-    let x11 = NaN;
-document.getElementById("demo11").innerHTML = typeof x11;
-</script>
+    <h2>NaN</h2>
+    <p>Demo 11 :The typeof NaN is number</p>
+    <p>x = NaN, type of x</p>
+    <p id="demo11"></p>
 
-<h2>∞ Infinity ∞</h2>
-<p>Demo 12a: Infinity is returned if you calculate a number outside the largest possible number:</p>
-<p>myNumber = 2, txt = "", if (myNumber =/= Infinity) then myNumber * myNumber = myNumber and txt + myNumber, txt =</p>
-<p id="demo12a"></p>
+    <script>
+      let x11 = NaN;
+      document.getElementById("demo11").innerHTML = typeof x11;
+    </script>
 
-<script>
-    let myNumber = 2; 
-    let txt = "";
-    while (myNumber != Infinity) {
+    <h2>∞ Infinity ∞</h2>
+    <p>
+      Demo 12a: Infinity is returned if you calculate a number outside the
+      largest possible number:
+    </p>
+    <p>
+      myNumber = 2, txt = "", if (myNumber =/= Infinity) then myNumber *
+      myNumber = myNumber and txt + myNumber, txt =
+    </p>
+    <p id="demo12a"></p>
+
+    <script>
+      let myNumber = 2;
+      let txt = "";
+      while (myNumber != Infinity) {
         myNumber = myNumber * myNumber;
-        txt = txt + myNumber + "<br>";}
-document.getElementById("demo12a").innerHTML = txt;
-</script>
+        txt = txt + myNumber + "<br>";
+      }
+      document.getElementById("demo12a").innerHTML = txt;
+    </script>
 
-<h2>X/0=∞ Infinity ∞</h2>
-<p>Demo 12b: Division by zero generates Infinity</p>
-<p>x = 2/0, y = -2/0</p>
-<p id="demo12b"></p>
+    <h2>X/0=∞ Infinity ∞</h2>
+    <p>Demo 12b: Division by zero generates Infinity</p>
+    <p>x = 2/0, y = -2/0</p>
+    <p id="demo12b"></p>
 
-<script>
-    let x12b = 2/0;
-    let y12b = -2/0;
-document.getElementById("demo12b").innerHTML = x12b + "<br>" + y12b;
-</script>
+    <script>
+      let x12b = 2 / 0;
+      let y12b = -2 / 0;
+      document.getElementById("demo12b").innerHTML = x12b + "<br>" + y12b;
+    </script>
 
-<h2>∞ Infinity is a # ∞</h2>
-<p>Demo 12c: Infinity is a number</p>
-<p>Type of Infinity</p>
-<p id="demo12c"></p>
+    <h2>∞ Infinity is a # ∞</h2>
+    <p>Demo 12c: Infinity is a number</p>
+    <p>Type of Infinity</p>
+    <p id="demo12c"></p>
 
-<script>
-    document.getElementById("demo12c").innerHTML = typeof Infinity;
-</script>
+    <script>
+      document.getElementById("demo12c").innerHTML = typeof Infinity;
+    </script>
 
-<h2>JS Hexadecimal</h2>
-<p>Demo 13: Numeric constants, preceded by 0x, are interpreted as hexadecimal:</p>
-<p>x = 0xFF</p>
-<p id="demo13"></p>
+    <h2>JS Hexadecimal</h2>
+    <p>
+      Demo 13: Numeric constants, preceded by 0x, are interpreted as
+      hexadecimal:
+    </p>
+    <p>x = 0xFF</p>
+    <p id="demo13"></p>
 
-<script>
-let x13 = 0xFF;
-document.getElementById("demo13").innerHTML = "0xFF = " + x13;
-</script>
+    <script>
+      let x13 = 0xff;
+      document.getElementById("demo13").innerHTML = "0xFF = " + x13;
+    </script>
 
-<h2>JS . . .decimal</h2>
-<p>Demo 14: The toString() method can output numbers from base 2 to 36:</p>
-<p id="demo14"></p>
+    <h2>JS . . .decimal</h2>
+    <p>Demo 14: The toString() method can output numbers from base 2 to 36:</p>
+    <p id="demo14"></p>
 
-<script>
-    let myNumber14 = 32;
-document.getElementById("demo14").innerHTML =
-"Decimal 32 = " + "<br><br>" + 
+    <script>
+      let myNumber14 = 32;
+      document.getElementById("demo14").innerHTML =
+        "Decimal 32 = " +
+        "<br><br>" +
+        "Hexatrigesimal (base 36): " +
+        myNumber14.toString(36) +
+        "<br>" +
+        "Duotrigesimal (base 32): " +
+        myNumber14.toString(32) +
+        "<br>" +
+        "Hexadecimal (base 16): " +
+        myNumber14.toString(16) +
+        "<br>" +
+        "Duodecimal (base 12): " +
+        myNumber14.toString(12) +
+        "<br>" +
+        "Decimal (base 10): " +
+        myNumber14.toString(10) +
+        "<br>" +
+        "Octal (base 8): " +
+        myNumber14.toString(8) +
+        "<br>" +
+        "Binary (base 2): " +
+        myNumber14.toString(2);
+    </script>
 
-"Hexatrigesimal (base 36): " + myNumber14.toString(36) + "<br>" +
-"Duotrigesimal (base 32): " + myNumber14.toString(32) + "<br>" +
-"Hexadecimal (base 16): " + myNumber14.toString(16) + "<br>" +
-"Duodecimal (base 12): " + myNumber14.toString(12) + "<br>" +
-"Decimal (base 10): " + myNumber14.toString(10) + "<br>" +
-"Octal (base 8): " + myNumber14.toString(8) + "<br>" +
-"Binary (base 2): " + myNumber14.toString(2);
-</script>
+    <h2>JS Numbers as Objects</h2>
+    <p>
+      Demo 15: Normally JS numbers are primitive values created from literals,
+      but numbers can also be defined as objects with the keyword new
+    </p>
+    <p>x = 123, y = new Number(123), type of x + y</p>
+    <p id="demo15"></p>
 
-<h2>JS Numbers as Objects</h2>
-<p>Demo 15: Normally JS numbers are primitive values created from literals, but numbers can also be defined as objects with the keyword new</p>
-<p>x = 123, y = new Number(123), type of x + y</p>
-<p id="demo15"></p>
+    <script>
+      // x is a number
+      let x15 = 123;
 
-<script>
-    // x is a number
-    let x15 = 123;
+      // y is a Number object
+      let y15 = new Number(123);
+      document.getElementById("demo15").innerHTML =
+        typeof x15 + "<br>" + typeof y15;
+    </script>
 
-    // y is a Number object
-    let y15 = new Number(123);
-document.getElementById("demo15").innerHTML = typeof x15 + "<br>" + typeof y15;
-</script>
+    <h2>JS Numbers as Objects</h2>
+    <p>Demo 16: Numbers and Number objects cannot be safely compared:</p>
+    <p>x==y and x===y</p>
+    <p id="demo16"></p>
 
-<h2>JS Numbers as Objects</h2>
-<p>Demo 16: Numbers and Number objects cannot be safely compared:</p>
-<p>x==y and x===y</P>
-<p id="demo16"></p>
+    <script>
+      // x is a number
+      let x16 = 500;
 
-<script>
-    // x is a number
-    let x16 = 500;
-
-    // y is an object
-    let y16 = new Number(500);
-document.getElementById("demo16").innerHTML = (x16==y16) + "<br>" + (x16===y16);
-</script>
-
-
-</body>
+      // y is an object
+      let y16 = new Number(500);
+      document.getElementById("demo16").innerHTML =
+        (x16 == y16) + "<br>" + (x16 === y16);
+    </script>
+  </body>
 </html>

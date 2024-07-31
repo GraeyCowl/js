@@ -1,4 +1,5 @@
 # Canvas Mouse Effect
+
 Move or click mouse to create color cycle trail effect
 Constellation effect connects circles
 Created using https://youtu.be/Yvz_axxWG4Y by Franks laboratory: https://www.youtube.com/@Frankslaboratory
